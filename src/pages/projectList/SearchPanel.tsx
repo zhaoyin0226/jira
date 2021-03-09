@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { IUsers } from "../projectList/interface/stateInterface";
 
 interface IProps {
@@ -25,7 +25,6 @@ const SearchPanel = (props: IProps) => {
         <select
           value={param.id}
           onChange={(e) => {
-            console.log('e.target.value is --',e.target.value)
             setParam({
               ...param,
               id: e.target.value,
